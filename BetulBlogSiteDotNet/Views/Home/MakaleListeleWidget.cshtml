@@ -1,0 +1,37 @@
+﻿@model IEnumerable<BetulBlogSiteDotNet.Models.Makale>
+
+@helper IcerikKisalt(string metin)
+{
+   if (metin.Length >300)
+   {
+   @metin.Substring(0,300)
+   }
+   else
+   {
+   @metin
+   }
+}
+<div class="blog-box row">
+    <div class="col-md-4">
+        <div class="post-media">
+            <a href="tech-single.html" title="">
+                <img src="upload/tech_blog_02.jpg" alt="" class="img-fluid">
+                <div class="hovereffect"></div>
+            </a>
+        </div><!-- end media -->
+    </div><!-- end col -->
+
+    @foreach (BetulBlogSiteDotNet.Models.Makale makale in Model)
+    {
+        <div class="blog-meta big-meta col-md-8">
+            <h4><a href="tech-single.html" title="">A device you can use both headphones and usb</a></h4>
+            <p>@IcerikKisalt(makale.Icerik)</p>
+            <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Technology</a></small>
+            <small><a href="tech-single.html" title="">@makale.EklenmeTarihi.ToShortDateString()</a></small>
+            <small><a href="tech-author.html" title="">@makale.Yazar.Adi</a></small>
+            <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> @makale.Yorum.Count()</a></small>
+        </div>
+    }
+        <!-- end meta>
+
+        </div><!-- end blog-box -->

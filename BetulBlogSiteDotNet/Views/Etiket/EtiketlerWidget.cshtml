@@ -1,0 +1,18 @@
+﻿@model IEnumerable<BetulBlogSiteDotNet.Models.Etiket>
+    <div class="widget">
+        <h2 class="widget-title">Follow Us</h2>
+
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                @foreach (BetulBlogSiteDotNet.Models.Etiket etiket in Model)
+                {
+                    <a href="#" class="social-button facebook-button">@etiket.Adi (etiket.Makales.Count) 
+                        <i class="fa fa-facebook"></i>
+                        <p>27k</p>
+                    </a>
+                }
+                </div>
+             
+
+        </div>
+    </div><!-- end widget -->

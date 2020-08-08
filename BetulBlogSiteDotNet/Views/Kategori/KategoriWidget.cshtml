@@ -1,0 +1,12 @@
+﻿@model IEnumerable<BetulBlogSiteDotNet.Models.Kategori>
+    <ul class="navbar-nav mr-auto">
+
+        @foreach (BetulBlogSiteDotNet.Models.Kategori kategori in Model)
+        {
+            <li class="nav-item">
+                <a class="nav-link" href="/Kategori/Makaleler/
+                   @kategori.KategoriId">@kategori.Adi (@kategori.Makale.Count)</a>
+            </li>
+
+        }
+        </ul>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df45378edc6e42dcbee3dbf355f33fcf" Name="Diagram1">
+        <EntityTypeShape EntityType="B403BlogModel.Etiket" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Kategori" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Kullanici" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Makale" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Resim" Width="1.5" PointX="7.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Yazar" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="B403BlogModel.Yorum" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="B403BlogModel.FK_Makale_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="B403BlogModel.FK_Makale_Yazar" ManuallyRouted="false" />
+        <AssociationConnector Association="B403BlogModel.FK_Resim_Makale" ManuallyRouted="false" />
+        <AssociationConnector Association="B403BlogModel.FK_Yorum_Makale" ManuallyRouted="false" />
+        <AssociationConnector Association="B403BlogModel.MakaleEtiket" ManuallyRouted="false" />
+        <AssociationConnector Association="B403BlogModel.YazarTakip" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
