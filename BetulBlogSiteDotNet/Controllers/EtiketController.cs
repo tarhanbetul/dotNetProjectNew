@@ -13,13 +13,19 @@ namespace BetulBlogSiteDotNet.Controllers
     {
         // GET: Etiket
         B403BlogEntities context = new B403BlogEntities();
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            return View(id);
         }
         public PartialViewResult EtiketlerWidget()
         {
             return PartialView(context.Etiket.ToList());
+        }
+        public ActionResult MakaleListele(int id)
+        {
+            var data = context.Makale.Where(x => x.Etiket.Any(y => y.EtiketId == id)).ToList();
+
+            return View("MakaleListeleWidget", data);
         }
     }
 }

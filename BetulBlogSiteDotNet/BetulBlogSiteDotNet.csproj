@@ -114,11 +114,14 @@
     <Content Include="Content\images\version\tech-footer-logo.png" />
     <Content Include="Content\images\version\tech-logo.png" />
     <Content Include="Content\images\videohover.png" />
+    <Content Include="Content\image\profil.jpg" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\custom.js" />
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\tether.min.js" />
     <Content Include="Content\tech-index.html" />
+    <Content Include="Content\tech-single.html" />
+    <Content Include="Content\YazarResim\Biz.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Models\MyBlogDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -133,24 +136,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Classes\CustomRoleProvider.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\EtiketController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\KullaniciController.cs" />
+    <Compile Include="Controllers\MakaleController.cs" />
+    <Compile Include="Controllers\YazarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Etiket.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Kategori.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Kullanici.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Makale.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MyBlogDB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -166,15 +162,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyBlogDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Resim.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Yazar.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Yorum.cs">
-      <DependentUpon>MyBlogDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -199,8 +186,16 @@
     <Content Include="Views\Home\MakaleListeleWidget.cshtml" />
     <Content Include="Views\Kategori\KategoriWidget.cshtml" />
     <Content Include="Views\Etiket\EtiketlerWidget.cshtml" />
-    <Content Include="Views\Home\SiteHakkinda.cshtml" />
+    <Content Include="Views\Shared\SiteHakkinda.cshtml" />
     <Content Include="Views\Home\PopulerMakalelerWidget.cshtml" />
+    <Content Include="Views\Kategori\Index.cshtml" />
+    <Content Include="Views\Etiket\Index.cshtml" />
+    <Content Include="Views\Makale\Detay.cshtml" />
+    <Content Include="Views\Kullanici\GirisYap.cshtml" />
+    <Content Include="Views\Makale\MakaleEkle.cshtml" />
+    <Content Include="Views\Kullanici\UyeOl.cshtml" />
+    <Content Include="Views\Yazar\YazarOl.cshtml" />
+    <Content Include="Views\Admin\YazarOnaylari.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

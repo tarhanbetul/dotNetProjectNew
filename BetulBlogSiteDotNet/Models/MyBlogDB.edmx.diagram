@@ -10,14 +10,21 @@
         <EntityTypeShape EntityType="B403BlogModel.Kullanici" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
         <EntityTypeShape EntityType="B403BlogModel.Makale" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="B403BlogModel.Resim" Width="1.5" PointX="7.5" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="B403BlogModel.Yazar" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="B403BlogModel.Yorum" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
         <AssociationConnector Association="B403BlogModel.FK_Makale_Kategori" ManuallyRouted="false" />
-        <AssociationConnector Association="B403BlogModel.FK_Makale_Yazar" ManuallyRouted="false" />
         <AssociationConnector Association="B403BlogModel.FK_Resim_Makale" ManuallyRouted="false" />
         <AssociationConnector Association="B403BlogModel.FK_Yorum_Makale" ManuallyRouted="false" />
         <AssociationConnector Association="B403BlogModel.MakaleEtiket" ManuallyRouted="false" />
-        <AssociationConnector Association="B403BlogModel.YazarTakip" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="B403BlogModel.Rol" Width="1.5" PointX="0.5" PointY="1.125" />
+        <EntityTypeShape EntityType="B403BlogModel.sysdiagrams" Width="1.5" PointX="7.625" PointY="8.75" />
+        <AssociationConnector Association="B403BlogModel.FK_Kullanici_Rol" />
+        <AssociationConnector Association="B403BlogModel.FK_Kullanici_Resim" />
+        <EntityTypeShape EntityType="B403BlogModel.KullaniciRol" Width="1.5" PointX="5.75" PointY="0.625" />
+        <AssociationConnector Association="B403BlogModel.FK_KullaniciRol_Kullanici" />
+        <AssociationConnector Association="B403BlogModel.FK_KullaniciRol_Rol" />
+        <EntityTypeShape EntityType="B403BlogModel.YazarTakip" Width="1.5" PointX="0.75" PointY="9.75" />
+        <AssociationConnector Association="B403BlogModel.FK_KullaniciRol_Rol1" />
+        <AssociationConnector Association="B403BlogModel.FK_KullaniciRol_Rol1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

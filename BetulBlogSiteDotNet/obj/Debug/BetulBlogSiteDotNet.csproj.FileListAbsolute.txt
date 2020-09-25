@@ -1,3 +1,5 @@
+C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.csprojAssemblyReference.cache
+C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.csproj.CoreCompileInputs.cache
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\BetulBlogSiteDotNet.dll.config
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\BetulBlogSiteDotNet.dll
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\BetulBlogSiteDotNet.pdb
@@ -69,8 +71,6 @@ C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\System.Web.Webpages.Razo
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\System.Web.Helpers.xml
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\System.Web.Mvc.xml
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.csprojAssemblyReference.cache
-C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.csproj.CoreCompileInputs.cache
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.csproj.CopyComplete
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.dll
 C:\MyLocalRepo\dotNetProjectNew\BetulBlogSiteDotNet\obj\Debug\BetulBlogSiteDotNet.pdb

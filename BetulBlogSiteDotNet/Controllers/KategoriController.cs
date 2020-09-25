@@ -12,14 +12,20 @@ namespace BetulBlogSiteDotNet.Controllers
 
         // GET: Kategori
         B403BlogEntities context = new B403BlogEntities();
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            return View(id);
         }
 
         public PartialViewResult KategoriWidget()
         {
             return PartialView(context.Kategori.ToList());
+        }
+
+        public ActionResult MakaleListele(int id)
+        {
+            var data = context.Makale.Where(x => x.KategoriID == id).ToList();
+            return View("MakaleListeleWidget", data);
         }
     }
 }

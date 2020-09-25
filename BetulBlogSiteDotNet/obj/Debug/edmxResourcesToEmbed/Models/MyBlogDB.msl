@@ -21,6 +21,11 @@
     <EntitySetMapping Name="Kullanici">
       <EntityTypeMapping TypeName="B403BlogModel.Kullanici">
         <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Onaylandı" ColumnName="Onaylandı" />
+          <ScalarProperty Name="Yazar" ColumnName="Yazar" />
+          <ScalarProperty Name="ResimID" ColumnName="ResimID" />
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
           <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
           <ScalarProperty Name="Adi" ColumnName="Adi" />
           <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
@@ -59,18 +64,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Yazar">
-      <EntityTypeMapping TypeName="B403BlogModel.Yazar">
-        <MappingFragment StoreEntitySet="Yazar">
-          <ScalarProperty Name="YazarId" ColumnName="YazarId" />
-          <ScalarProperty Name="Adi" ColumnName="Adi" />
-          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
-          <ScalarProperty Name="MailAdres" ColumnName="MailAdres" />
-          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
-          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Yorum">
       <EntityTypeMapping TypeName="B403BlogModel.Yorum">
         <MappingFragment StoreEntitySet="Yorum">
@@ -91,13 +84,41 @@
         <ScalarProperty Name="MakaleId" ColumnName="MakaleID" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="YazarTakip" TypeName="B403BlogModel.YazarTakip" StoreEntitySet="YazarTakip">
-      <EndProperty Name="Kullanici">
-        <ScalarProperty Name="KullaniciId" ColumnName="KullaniciID" />
-      </EndProperty>
-      <EndProperty Name="Yazar">
-        <ScalarProperty Name="YazarId" ColumnName="YazarID" />
-      </EndProperty>
-    </AssociationSetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="B403BlogModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="RolAdi" ColumnName="RolAdi" />
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="B403BlogModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KullaniciRol">
+      <EntityTypeMapping TypeName="B403BlogModel.KullaniciRol">
+        <MappingFragment StoreEntitySet="KullaniciRol">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
+          <ScalarProperty Name="KullaniciRolId" ColumnName="KullaniciRolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YazarTakip">
+      <EntityTypeMapping TypeName="B403BlogModel.YazarTakip">
+        <MappingFragment StoreEntitySet="YazarTakip">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="YazarID" ColumnName="YazarID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -6,7 +6,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                 @foreach (BetulBlogSiteDotNet.Models.Etiket etiket in Model)
                 {
-                    <a href="#" class="social-button facebook-button">@etiket.Adi (etiket.Makales.Count) 
+                    <a href="/Etiket/Index/@etiket.EtiketId">@etiket.Makale.Count class="social-button facebook-button">@etiket.Adi (etiket.Makales.Count) 
                         <i class="fa fa-facebook"></i>
                         <p>27k</p>
                     </a>

@@ -28,7 +28,7 @@ namespace BetulBlogSiteDotNet.Controllers
         {
             var model = context.Makale.OrderByDescending
                 (x => x.EklenmeTarihi).Take(3).ToList();
-            return PartialView();
+            return PartialView(model);
         }
     }
 }//numantest

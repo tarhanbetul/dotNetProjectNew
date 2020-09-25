@@ -6,22 +6,3 @@
 @{ 
     Html.RenderAction("MakaleListeleWidget");
 }
-
-@section Kategoriler{
-    @{ 
-        Html.RenderAction("KategoriWidget", "Kategori");
-    }
-    
-   
- }
-@section Etiketler{
-    @{ 
-        Html.RenderAction("EtiketlerWidget", "Etiket");
-    }
-}
-
-@section Sitehakkinda{
-    
-    @{ 
-        Html.RenderPartial("SiteHakkinda");
-    }}
